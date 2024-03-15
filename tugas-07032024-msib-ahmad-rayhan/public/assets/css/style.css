@@ -1,0 +1,161 @@
+:root {
+    --alice-blue-1: hsl(216, 38%, 95%);
+    --eerie-black: hsl(210, 11%, 15%);
+    --red-salsa: hsl(0, 79%, 63%);
+    --ff-Poppins: "Poppins", sans-serif;
+    --white: hsl(0, 0%, 100%);
+
+}
+
+body {
+    position: relative;
+}
+
+body,
+html {
+    height: 100%;
+    margin: 0;
+    font: 400 15px/1.8 var(--ff-Poppins);
+    color: var(--alice-blue-1);
+}
+
+blink,
+.blink {
+    animation: blinker 2s linear infinite;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
+
+.nav-tab {
+    float: right;
+    margin-right: 15px;
+    background-color: transparent;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.nav-tab:focus {
+    outline: 0;
+}
+
+.nav-tab .icon-bar {
+    display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
+}
+
+.nav-tab .icon-bar + .icon-bar {
+    margin-top: 4px;
+}
+
+@media (min-width: 768px) {
+    .nav-tab {
+        display: none;
+    }
+}
+
+.navbar-custom {
+    margin-bottom: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    text-transform: uppercase;
+    font-family: var(--ff-Poppins);
+    background-color: var(--alice-blue-1);
+}
+
+.navbar-custom .navbar-brand {
+    font-size: 20px;
+    text-transform: none;
+    letter-spacing: 1px;
+    color: var(--eerie-black);
+}
+
+.navbar-custom .navbar-brand:hover {
+    outline: 0;
+    color: var(--red-salsa);
+    background-color: transparent;
+}
+
+.navbar-custom .nav li a {
+    -webkit-transition: background 0.3s ease-in-out;
+    -moz-transition: background 0.3s ease-in-out;
+    transition: background 0.3s ease-in-out;
+    color: var(--eerie-black);
+}
+
+.navbar-custom .nav li a:hover {
+    outline: 0;
+    color: var(--red-salsa);
+    background-color: transparent;
+}
+
+@media (min-width: 768px) {
+    .navbar-custom {
+        padding: 20px 0;
+        border-bottom: 0;
+        font-size: 13px;
+        background: 0 0;
+        -webkit-transition: background 0.5s ease-in-out,
+            padding 0.5s ease-in-out;
+        -moz-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+        transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+    }
+    .navbar-custom.top-nav-collapse {
+        padding: 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        color: white;
+        background-color: var(--alice-blue-1);
+    }
+    .navbar-custom.top-nav-collapse a {
+        color: black;
+        display: inline-block;
+    }
+    .navbar-custom.top-nav-collapse li a {
+        color: black;
+        display: inline-block;
+    }
+}
+
+.bgimg-1 {
+    background-image: url("../../assets/img/car.jpg");
+    min-height: 100%;
+    position: relative;
+    opacity: 0.8;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.grid-item {
+    background-color: transparent;
+    cursor: pointer;
+    transition: 0.2s;
+    position: absolute;
+    width: 25%;
+    text-align: center;
+    left: 65%;
+    top: 25%;
+}
+
+.tittle {
+    margin-top: 30px;
+    font-size: 30px;
+    font-family: var(--ff-Poppins);
+    color: var(--alice-blue-1);
+}
+
+.text {
+    text-align: justify;
+    color: var(--alice-blue-1);
+    font-family: var(--ff-Poppins);
+}

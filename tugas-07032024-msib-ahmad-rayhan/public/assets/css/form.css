@@ -1,0 +1,14 @@
+:root {
+    --alice-blue-1: hsl(216, 38%, 95%);
+    --eerie-black: hsl(210, 11%, 15%);
+    --red-salsa: hsl(0, 79%, 63%);
+    --ff-Poppins: "Poppins", sans-serif;
+}
+
+.form-area {
+    background-color: var(--alice-blue-4);
+    padding: 10px 40px 60px;
+    margin: 10px 0px 60px;
+    border: 1px solid GREY;
+    opacity: 0.9;
+}
